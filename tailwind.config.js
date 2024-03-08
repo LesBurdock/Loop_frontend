@@ -3,7 +3,10 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {},
+    fontFamily: {
+      'Alata': [ 'Alata', 'sans-serif'],
+      'Josefin': ['"Josefin Sans"', 'serif'] 
   },
   plugins: [],
 }
-
+}
