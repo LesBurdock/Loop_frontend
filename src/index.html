@@ -1,17 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
   <title>Frontend Mentor | Loopstudios landing page</title>
   <link href="./output.css" rel="stylesheet">
   <style>
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
-    </style>
+    @import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+  </style>
 </head>
+
 <body class="font-Josefin font-light">
   <div class="relative">
     <div>
@@ -29,12 +32,13 @@
             <li>Support</li>
           </ul>
           <div class="md:hidden absolute top-0 left-10">
-            <img src="/Users/lesleyburdock/code/loop_frontend/src/images/icon-hamburger.svg" class="size-1"/>
-        </div>
+            <img src="/Users/lesleyburdock/code/loop_frontend/src/images/icon-hamburger.svg" class="size-1" />
+          </div>
         </nav>
       </div>
-      <div >
-        <h1 class="absolute text-white bottom-5 left-10 md:bottom-24 md:left-24 text-2xl md:text-7xl border-2 border-white p-2 md:p-8 uppercase leading-12 w-3/4 md:w-1/2">
+      <div>
+        <h1
+          class="absolute text-white bottom-5 left-10 md:bottom-24 md:left-24 text-2xl md:text-7xl border-2 border-white p-2 md:p-8 uppercase leading-12 w-3/4 md:w-1/2">
           Immersive experiences that deliver</h1>
       </div>
     </div>
@@ -46,7 +50,8 @@
     </div>
     <div class="bg-white p-2 md:-translate-x-32 md:translate-y-24 md:p-16 md:place-self-end text-center md:text-left">
       <h2 class="text-3xl md:text-5xl py-4 uppercase">The leader in interactive VR</h2>
-      <p class="text-sm md:text-lg font-Alata text-gray-500">Founded in 2011, Loopstudios has been producing world-class virtual reality
+      <p class="text-sm md:text-lg font-Alata text-gray-500">Founded in 2011, Loopstudios has been producing world-class
+        virtual reality
         projects for some of the best companies around the globe. Our award-winning
         creations have transformed businesses through digital experiences that bind
         to their brand.</p>
@@ -54,53 +59,61 @@
   </div>
 
   <div class="mx-12 md:mx-24">
-    <div class="flex justify-between uppercase py-6 mr-12">  
-      <h2 class="text-2xl">Our creations</h2>
-      <p class="border-2 border-black px-4 py-2">See all</p>
+    <div class="grid grid-cols-1 row-auto md:grid-cols-4 gap-6 grid-rows-[minmax(10px, auto)] ">
+      <h2 class="text-2xl uppercase py-6 text-center md:text-left md:col-start-1 md:col-span-2">Our creations</h2>
+      <p class="border-2 border-black p-4 text-center md:text-right uppercase md:col-start-4">See all</p>
+      <div class="relative md:col-start-1 md:row-start-2 ">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Deep earth</h3>
+        <img src="images/desktop/image-deep-earth.jpg" class="object-cover brightness-70  h-32 w-full md:h-96 top:0" />
+      </div>
+      <div class="relative md:row-start-2">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Night arcade</h3><img
+          src="images/desktop/image-fisheye.jpg" class="object-cover brightness-70 h-32 w-full md:h-96" />
+      </div>
+      <div class="relative md:row-start-2">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Soccer team VR</h3><img
+          src="images/desktop/image-soccer-team.jpg"
+          class=" bg-left-top object-cover brightness-70  h-32 w-full md:h-96" />
+      </div>
+      <div class="relative md:row-start-2">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">The grid</h3><img
+          src="images/desktop/image-grid.jpg" class="object-cover brightness-70  h-32 w-full md:h-96" />
+      </div>
+      <div class="relative md:row-start-3">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">From up above VR</h3><img
+          src="images/desktop/image-from-above.jpg" class="object-cover brightness-70 h-32 w-full md:h-96" />
+      </div>
+      <div class="relative md:row-start-3">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Pocket borealis</h3><img
+          src="images/desktop/image-pocket-borealis.jpg" class="object-cover brightness-70  h-32 w-full md:h-96" />
+      </div>
+      <div class="relative md:row-start-3">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">The curiosity</h3><img
+          src="images/desktop/image-curiosity.jpg" class="object-cover brightness-70  h-32 w-full md:h-96" />
+      </div>
+      <div class="relative md:row-start-3">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Make it fisheye</h3><img
+          src="images/desktop/image-fisheye.jpg" class="object-cover brightness-70  h-32 w-full md:h-96" />
+      </div>
     </div>
-    
-  <div class="grid grid-cols-1 row-auto md:grid-cols-4 gap-6 md:grid-rows-2 ">
-    <div class="relative">
-      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Deep earth</h3>
-      <img src="images/desktop/image-deep-earth.jpg" class="object-cover brightness-70  h-32 w-full md:h-96 top:0" />
-    </div>
-    <div class="relative">
-      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Night arcade</h3><img src="images/desktop/image-fisheye.jpg" class="object-cover brightness-70 h-32 w-full md:h-96"/>
-    </div>
-    <div class="relative">
-      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Soccer team VR</h3><img src="images/desktop/image-soccer-team.jpg" class=" bg-left-top object-cover brightness-70  h-32 w-full md:h-96"/>
-    </div>
-    <div class="relative">
-      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">The grid</h3><img src="images/desktop/image-grid.jpg" class="object-cover brightness-70  h-32 w-full md:h-96"/>
-    </div>
-    <div class="relative">
-      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">From up above VR</h3><img src="images/desktop/image-from-above.jpg" class="object-cover brightness-70 h-32 w-full md:h-96"/>
-    </div>
-    <div class="relative">
-      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Pocket borealis</h3><img src="images/desktop/image-pocket-borealis.jpg"class="object-cover brightness-70  h-32 w-full md:h-96" />
-    </div>
-    <div class="relative">
-      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">The curiosity</h3><img src="images/desktop/image-curiosity.jpg" class="object-cover brightness-70  h-32 w-full md:h-96"/>
-    </div>
-    <div class="relative">
-      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Make it fisheye</h3><img src="images/desktop/image-fisheye.jpg" class="object-cover brightness-70  h-32 w-full md:h-96"/>
-    </div>
-  </div>
   </div>
 
-  <div class="py-8"> About
-    Careers
-    Events
-    Products
-    Support
-  
-    © 2021 Loopstudios. All rights reserved.</div>
- 
+  <div class="py-8 bg-black text-white flex flex-row justify-between mt-12"> 
+    <div class="mx-24"> 
+      <p>About</p>
+      <p>Careers</p>
+      <p>Events</p>
+      <p>Products</p>
+      <p>Support</p>
+    </div>
+    <p>© 2021 Loopstudios. All rights reserved.</p>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
 
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
+</div>
 </body>
 
 </html>
