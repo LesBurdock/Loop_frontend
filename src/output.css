@@ -820,6 +820,10 @@ video {
     grid-column-start: 4;
   }
 
+  .md\:col-start-2 {
+    grid-column-start: 2;
+  }
+
   .md\:row-start-2 {
     grid-row-start: 2;
   }
