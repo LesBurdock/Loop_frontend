@@ -7,7 +7,7 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
+  <script type="text/javascript" src="app.js"></script>
   <title>Frontend Mentor | Loopstudios landing page</title>
   <link href="./output.css" rel="stylesheet">
   <style>
@@ -16,16 +16,19 @@
 </head>
 
 <body class="font-Josefin font-light">
-  <div class="relative w-full md:w-auto">
-    <div>
+  <div class="relative  md:w-full">
+    <div class="hidden md:block">
       <img src="images/desktop/image-hero.jpg" />
     </div>
+    <div class="block md:hidden">
+      <img src="images/mobile/image-hero.jpg" />
+    </div>
     <div >
-      <a class="absolute block top-4 right-4 md:hidden">
-        <img src="/Users/lesleyburdock/code/loop_frontend/src/images/icon-hamburger.svg" class="size-3" />
+      <a class="absolute block top-4 right-12 md:hidden" onClick="openCall()" id="hamburger">
+        <img src="/Users/lesleyburdock/code/loop_frontend/src/images/icon-hamburger.svg" class="size-8" />
       </a>
-      <div class="absolute hidden md:block top-0 left-0 w-full px-24 py-8 text-white">
-        <nav class="flex justify-between">
+      <div class="absolute hidden md:block md:top-0 md:left-0 md:w-full md:px-24 md:py-8 text-white">
+        <div class="flex justify-between" id="nav_items">
           <a><img src="images/logo.svg"></a>
           <ul class="gap-5 font-Alata inline-flex">
             <li>About</li>
@@ -34,11 +37,11 @@
             <li>Products</li>
             <li>Support</li>
           </ul>
-        </nav>
+        </div>
       </div>
       <div>
         <h1
-          class="absolute text-white bottom-5 left-10 md:bottom-24 md:left-24 text-2xl md:text-7xl border-2 border-white p-2 md:p-8 uppercase leading-12 w-3/4 md:w-1/2">
+          class="absolute text-white bottom-20 left-10 md:bottom-24 md:left-24 text-4xl md:text-7xl border-2 border-white p-6 md:p-8 uppercase leading-12 w-3/4 md:w-1/2">
           Immersive experiences that deliver</h1>
       </div>
     </div>
@@ -63,43 +66,82 @@
       <h2 class="text-2xl uppercase py-6 text-center md:text-left md:col-start-1 md:col-span-2">Our creations</h2>
       <p class="border-2 border-black p-4 text-center md:text-right uppercase md:col-start-4">See all</p>
       <div class="relative md:col-start-1 md:row-start-2 ">
-        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Deep earth</h3>
-        <img src="images/desktop/image-deep-earth.jpg" class="object-cover brightness-70  h-32 w-full md:h-96 top:0" />
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Deep Earth</h3>
+        <div class="hidden md:block object-cover brightness-70 w-full top:0">
+          <img src="images/desktop/image-deep-earth.jpg" />
+        </div>
+        <div class="block md:hidden">
+          <img src="images/mobile/image-deep-earth.jpg" />
+        </div>
+      </div>
+      <div class="relative md:col-start-1 md:row-start-2 ">
+      <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Night Arcade</h3>
+      <div class="hidden md:block object-cover brightness-70 w-full top:0">
+        <img src="images/desktop/image-night-arcade.jpg" />
+      </div>
+      <div class="block md:hidden">
+        <img src="images/mobile/image-night-arcade.jpg" />
+      </div>
       </div>
       <div class="relative md:row-start-2">
-        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Night arcade</h3><img
-          src="images/desktop/image-fisheye.jpg" class="object-cover brightness-70 h-32 w-full md:h-96" />
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Soccer team VR</h3>
+        <div class="hidden md:block object-cover brightness-70 w-full top:0">
+          <img src="images/desktop/image-soccer-team.jpg" />
+        </div>
+        <div class="block md:hidden">
+          <img src="images/mobile/image-soccer-team.jpg" />
+        </div>
       </div>
       <div class="relative md:row-start-2">
-        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Soccer team VR</h3><img
-          src="images/desktop/image-soccer-team.jpg"
-          class=" bg-left-top object-cover brightness-70  h-32 w-full md:h-96" />
-      </div>
-      <div class="relative md:row-start-2">
-        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">The grid</h3><img
-          src="images/desktop/image-grid.jpg" class="object-cover brightness-70  h-32 w-full md:h-96" />
-      </div>
-      <div class="relative md:row-start-3">
-        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">From up above VR</h3><img
-          src="images/desktop/image-from-above.jpg" class="object-cover brightness-70 h-32 w-full md:h-96" />
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">The grid</h3>
+        <div class="hidden md:block object-cover brightness-70 w-full top:0">
+          <img src="images/desktop/image-grid.jpg" />
+        </div>
+        <div class="block md:hidden">
+          <img src="images/mobile/image-grid.jpg" />
+        </div>
       </div>
       <div class="relative md:row-start-3">
-        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Pocket borealis</h3><img
-          src="images/desktop/image-pocket-borealis.jpg" class="object-cover brightness-70  h-32 w-full md:h-96" />
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">From up above</h3>
+        <div class="hidden md:block object-cover brightness-70 w-full top:0">
+          <img src="images/desktop/image-from-above.jpg" />
+        </div>
+        <div class="block md:hidden">
+          <img src="images/mobile/image-from-above.jpg" />
+        </div>
       </div>
       <div class="relative md:row-start-3">
-        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">The curiosity</h3><img
-          src="images/desktop/image-curiosity.jpg" class="object-cover brightness-70  h-32 w-full md:h-96" />
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Pocket borealis</h3> 
+        <div class="hidden md:block object-cover brightness-70 w-full top:0">
+          <img src="images/desktop/image-pocket-borealis.jpg" />
+        </div>
+        <div class="block md:hidden">
+          <img src="images/mobile/image-pocket-borealis.jpg" />
+        </div>
       </div>
       <div class="relative md:row-start-3">
-        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Make it fisheye</h3><img
-          src="images/desktop/image-fisheye.jpg" class="object-cover brightness-70  h-32 w-full md:h-96" />
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">The curiosity</h3>
+        <div class="hidden md:block object-cover brightness-70 w-full top:0">
+          <img src="images/desktop/image-curiosity.jpg" />
+        </div>
+        <div class="block md:hidden">
+          <img src="images/mobile/image-curiosity.jpg" />
+        </div>
+      </div>
+      <div class="relative md:row-start-3">
+        <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl">Make it fisheye</h3> 
+        <div class="hidden md:block object-cover brightness-70 w-full top:0">
+          <img src="images/desktop/image-fisheye.jpg" />
+        </div>
+        <div class="block md:hidden">
+          <img src="images/mobile/image-fisheye.jpg" />
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="py-8 bg-black text-white flex flex-row justify-between mt-12"> 
-    <div class="mx-24"> 
+  <div></div> 
+    <!-- <div class="mx-24"> 
       <p>About</p>
       <p>Careers</p>
       <p>Events</p>
@@ -110,10 +152,10 @@
     <div class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
       Coded by <a href="#">Your Name Here</a>.
-    </div> -->
+    </div> --> -->
 
 
-</div>
+
 </body>
 
 </html>
