@@ -597,8 +597,36 @@ video {
   bottom: 10rem;
 }
 
+.right-10 {
+  right: 2.5rem;
+}
+
+.top-10 {
+  top: 2.5rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
+.top-14 {
+  top: 3.5rem;
+}
+
+.col-start-1 {
+  grid-column-start: 1;
+}
+
 .row-auto {
   grid-row: auto;
+}
+
+.row-start-8 {
+  grid-row-start: 8;
+}
+
+.row-start-10 {
+  grid-row-start: 10;
 }
 
 .m-8 {
@@ -811,6 +839,10 @@ video {
 
 .flex-col {
   flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
 }
 
 .justify-center {
@@ -1061,6 +1093,14 @@ video {
     display: block;
   }
 
+  .md\:flex {
+    display: flex;
+  }
+
+  .md\:inline-flex {
+    display: inline-flex;
+  }
+
   .md\:grid {
     display: grid;
   }
@@ -1157,6 +1197,10 @@ video {
 
   .md\:flex-row {
     flex-direction: row;
+  }
+
+  .md\:justify-between {
+    justify-content: space-between;
   }
 
   .md\:justify-items-start {
@@ -1271,4 +1315,37 @@ video {
   .lg\:leading-3 {
     line-height: .75rem;
   }
+}
+
+.\[\&\>div\:\:before\]\:before\:translate-y-0>div::before::before {
+  content: var(--tw-content);
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.\[\&\>div\:\:before\]\:before\:rotate-45>div::before::before {
+  content: var(--tw-content);
+  --tw-rotate: 45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.\[\&\>div\:\:before\]\:after\:translate-y-0>div::after::before {
+  content: var(--tw-content);
+  --tw-translate-y: 0px;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.\[\&\>div\:\:before\]\:after\:-rotate-45>div::after::before {
+  content: var(--tw-content);
+  --tw-rotate: -45deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.\[\&\>div\]\:h-0>div {
+  height: 0px;
+}
+
+.\[\&\>div\]\:bg-white>div {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }

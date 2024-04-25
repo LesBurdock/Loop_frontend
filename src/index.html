@@ -16,19 +16,20 @@
 </head>
 <body class="font-Josefin font-light">
   <div class="relative w-screen">
-    <div class="bg-cover bg-center h-screen hidden md:block" 
-    style="background-image: url('images/desktop/image-hero.jpg');"> 
-</div >
-    <div class="bg-cover bg-center h-screen block md:hidden" style="background-image: url('images/mobile/image-hero.jpg');"> 
+    <div class="bg-cover bg-center h-screen hidden md:block"
+      style="background-image: url('images/desktop/image-hero.jpg');">
     </div>
-    <div>
-      <a class="absolute block top-4 right-12 md:hidden" onClick="openCall()" id="hamburger">
-        <img src="/Users/lesleyburdock/code/loop_frontend/src/images/icon-hamburger.svg" class="size-8" />
+    <div class="bg-cover bg-center h-screen block md:hidden"
+      style="background-image: url('images/mobile/image-hero.jpg');">
+    </div>
+      <header>
+      <a class="absolute block top-4 right-12 md:hidden">
+        <img src="/Users/lesleyburdock/code/loop_frontend/src/images/icon-hamburger.svg" class="size-8" onClick="openCall()" id="hamburger"/>
       </a>
-      <div class="absolute hidden md:block md:top-0 md:left-0 md:w-full md:px-24 md:py-8 text-white">
-        <div class="flex justify-between" id="nav_items">
-          <a><img src="images/logo.svg"></a>
-          <ul class="gap-5 font-Alata inline-flex">
+      <nav class="absolute top-14 right-12 text-2xl flex flex-col md:top-0 md:left-0 md:w-full md:px-24 md:py-8 text-white">
+        <div class="md:flex md:justify-between">
+          <a class="hidden md:block "><img src="images/logo.svg"></a>
+          <ul class="hidden md:block gap-5 font-Alata md:inline-flex" id="nav-menu">
             <li>About</li>
             <li>Careers</li>
             <li>Events</li>
@@ -36,7 +37,8 @@
             <li>Support</li>
           </ul>
         </div>
-      </div>
+      </nav>
+    </header>
       <div>
         <h1
           class="absolute text-white bottom-40 left-10 md:bottom-12 md:left-24 md:p-12 text-4xl border-2 border-white p-6 lg:p-8 lg:bottom-24 lg:left-24 lg:text-6xl border-2 border-white p-6 lg:p-8 uppercase leading-12 w-3/4 lg:w-1/2">
@@ -60,9 +62,11 @@
   </div>
 
   <div class="mx-8 mb-12 md:mx-24">
-    <div class="grid grid-cols-1 md:auto-rows-3 md:grid-cols-4 gap-6 grid-flow-row">
+    <div class="grid grid-cols-1 md:auto-rows-3 md:grid-cols-4 gap-6 grid-flow-row items-center">
         <h2 class="text-2xl uppercase text-center md:text-left md:col-start-1 md:row-span-1">Our creations</h2>
-        <div class="object-center md:col-start-4 md:row-span-1"><button class="border-2 border-black uppercase text-sm  h-10 w-24">See all</button></div>
+        <div class="col-start-1 row-start-10 md:col-start-4 md:row-span-1">
+          <button class="border-2 border-black uppercase text-sm h-10 w-24">See all</button>
+        </div>
       <div class="relative md:col-start-1 md:row-start-2 ">
         <h3 class="absolute bottom-4 text-white uppercase px-6 text-2xl md:text-3xl w-1/2">Deep Earth</h3>
         <div class="hidden bg-cover bg-center h-[30rem] md:block"
